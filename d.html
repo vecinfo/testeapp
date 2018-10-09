@@ -1,0 +1,15 @@
+<label id="LblText"></label>
+<script>
+    function checkConnection() {
+        if(navigator.onLine) {
+
+	  location.href="noticia.html";
+        } else {
+          status = 'Offline';
+	  location.href="index.html";
+        }
+        document.getElementById('LblText').innerText = status;
+    }
+
+    checkConnection();
+</script>
